@@ -1,0 +1,12 @@
+*.yml
+*.pyc
+.amlignore
+__pycache__/*.*
+.azureml/*.*
+.config/*.*
+.ipynb_checkpoints/*.*
+.vscode/*.*
+*/.amlignore
+*/*.pyc
+*.amltmp
+*/*.amltmp

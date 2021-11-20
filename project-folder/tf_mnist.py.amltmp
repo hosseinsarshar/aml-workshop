@@ -165,6 +165,8 @@ for epoch in range(0, n_epochs):
     pred = neural_net(X_test, is_training=False)
     acc_val = accuracy(pred, y_test)
 
+    lift_score = custom_metric(y_test, pred)
+
     # log accuracies
     run.log('training_acc', np.float(acc_train))
     run.log('validation_acc', np.float(acc_val))
