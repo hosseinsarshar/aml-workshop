@@ -1,0 +1,6 @@
+mlflow
+cloudpickle==1.6.0
+lz4==4.0.2
+psutil==5.9.1
+scikit-learn==0.22.1
+uuid==1.30

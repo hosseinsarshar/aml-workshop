@@ -48,16 +48,16 @@ output_filename = args.output_filename
 run = Run.get_context(allow_offline=False)
 print(run._run_dto["parent_run_id"])
 
-input_fullpath = input_path + f'/{input_filename}'
-df = spark.read.csv(input_fullpath)
-
-print(display(df))
-
-total_rows = df.count()
-run.log('total_rows', total_rows)
-
-onput_fullpath = output_path + f"/{output_filename}"
-df.write.parquet(onput_fullpath)
+# input_fullpath = input_path + f'/{input_filename}'
+# df = spark.read.csv(input_fullpath)
+# 
+# print(display(df))
+# 
+# total_rows = df.count()
+# run.log('total_rows', total_rows)
+# 
+# onput_fullpath = output_path + f"/{output_filename}"
+# df.write.parquet(onput_fullpath)
 
 run.log('Loss', 1.2)
 run.log('Loss', 1.8)
